@@ -8,28 +8,28 @@ const slides = [
     id: 1,
     title: "Cerrajería Automotriz",
     subtitle: "Especialistas en llaves con chip, programación y aperturas sin daño.",
-    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1920&auto=format&fit=crop",
+    image: "/hero-automotriz.png",
     link: "/servicios/automotriz"
   },
   {
     id: 2,
     title: "Cerrajería Residencial",
     subtitle: "Protege lo que más quieres con sistemas de alta seguridad.",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1920&auto=format&fit=crop",
+    image: "/hero-residencial.png",
     link: "/servicios/residencial"
   },
   {
     id: 3,
     title: "Cerrajería Comercial",
     subtitle: "Control de acceso y seguridad perimetral para tu negocio.",
-    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1920&auto=format&fit=crop",
+    image: "/hero-comercial.png",
     link: "/servicios/comercial"
   },
   {
     id: 4,
     title: "Servicio de Emergencias",
     subtitle: "Estamos disponibles 24/7 para ayudarte en cualquier situación.",
-    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1920&auto=format&fit=crop",
+    image: "/hero-emergencia.png",
     link: "/cotizador"
   }
 ];
