@@ -15,9 +15,16 @@ export const generateQuotePDF = (quote: {
   doc.setFillColor(245, 196, 0); // Primary color #f5c400
   doc.rect(0, 0, 210, 40, 'F');
   
+  // Add Logo if possible
+  try {
+    doc.addImage('/logo.png', 'PNG', 10, 5, 30, 30);
+  } catch (e) {
+    console.error('Could not load logo for PDF', e);
+  }
+
   doc.setTextColor(26, 26, 26);
   doc.setFontSize(22);
-  doc.text('COTIZACIÓN DE CERRAJERÍA', 105, 25, { align: 'center' });
+  doc.text('COTIZACIÓN DE CERRAJERÍA', 115, 25, { align: 'center' });
 
   // Info
   doc.setFontSize(12);
