@@ -8,18 +8,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="bg-primary p-2 rounded-lg">
-                <MessageSquare className="text-dark w-6 h-6" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-black tracking-tighter uppercase leading-none">
-                  Centro de Llaves<span className="text-primary"> Juan Ramón</span>
-                </span>
-                <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mt-1">
-                  Cerrajería Especializada
-                </span>
-              </div>
+            <Link to="/" className="flex items-center">
+              <img src="/logo.png" alt="Centro de Llaves Juan Ramón" className="h-32 w-auto" referrerPolicy="no-referrer" />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Soluciones profesionales de cerrajería para tu vehículo, hogar y negocio. 
