@@ -16,28 +16,26 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-dark text-white sticky top-0 z-50 shadow-xl">
+    <nav className="bg-linear-to-r from-white via-dark/95 to-dark text-white sticky top-0 z-50 shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="bg-primary p-2 rounded-lg">
-                <MessageSquare className="text-dark w-6 h-6" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-black tracking-tighter uppercase leading-none">
-                  Centro de Llaves<span className="text-primary"> Juan Ramón</span>
-                </span>
-                <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mt-1">
-                  Cerrajería Especializada
-                </span>
-              </div>
+        <div className="flex justify-between h-20 lg:h-28">
+          <div className="flex items-center relative w-64 lg:w-80">
+            <Link to="/" className="absolute left-0 top-1/2 -translate-y-1/2">
+              <img 
+                src="/logo.png" 
+                alt="Centro de Llaves Juan Ramón" 
+                className="h-24 lg:h-32 w-auto scale-x-110 origin-left drop-shadow-md" 
+                referrerPolicy="no-referrer" 
+              />
+              <span className="absolute left-20 lg:left-28 bottom-4 lg:bottom-6 text-[7px] lg:text-[9px] font-black text-primary uppercase tracking-[0.25em] drop-shadow-sm whitespace-nowrap">
+                Cerrajería Especializada
+              </span>
             </Link>
           </div>
 
           {/* Desktop Links */}
           <div className="hidden lg:flex items-center space-x-8">
-            <div className="flex items-center space-x-4 mr-4 border-r border-gray-800 pr-8">
+            <div className="flex items-center space-x-4 mr-4 border-r border-gray-700 pr-8">
               <a href="https://www.facebook.com/centrodellavesjuanramonrd" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
@@ -54,7 +52,7 @@ export default function Navbar() {
                 to={link.href}
                 className={cn(
                   "text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors",
-                  location.pathname === link.href ? "text-primary" : "text-gray-300"
+                  location.pathname === link.href ? "text-primary" : "text-white"
                 )}
               >
                 {link.name}
