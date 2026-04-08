@@ -41,7 +41,7 @@ export default function App() {
               <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-16">
                   <h1 className="text-5xl font-black text-dark uppercase tracking-tighter mb-4">Cotizador Inteligente</h1>
-                  <p className="text-gray-500 text-lg">Obtén una cotización precisa en menos de 30 segundos.</p>
+                  <p className="text-gray-500 text-lg">Obtén una cotización precisa en poco tiempo.</p>
                 </div>
                 <SmartQuoter />
               </div>
