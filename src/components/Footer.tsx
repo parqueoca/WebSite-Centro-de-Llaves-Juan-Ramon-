@@ -35,6 +35,7 @@ export default function Footer() {
               <li><Link to="/servicios/automotriz" className="hover:text-white transition-colors">Cerrajería Automotriz</Link></li>
               <li><Link to="/servicios/residencial" className="hover:text-white transition-colors">Cerrajería Residencial</Link></li>
               <li><Link to="/servicios/comercial" className="hover:text-white transition-colors">Cerrajería Comercial</Link></li>
+              <li><Link to="/politicas" className="hover:text-white transition-colors">Políticas y Condiciones</Link></li>
               <li><Link to="/cotizador" className="hover:text-white transition-colors">Cotizador Online</Link></li>
             </ul>
           </div>
