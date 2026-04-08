@@ -17,7 +17,7 @@ export default function AutomotivePage() {
       <div className="relative min-h-[400px] md:h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1920&auto=format&fit=crop" 
+            src="/hero-automotriz.png" 
             alt="Automotive Locksmith" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
