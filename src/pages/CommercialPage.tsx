@@ -17,7 +17,7 @@ export default function CommercialPage() {
       <div className="relative min-h-[400px] md:h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1920&auto=format&fit=crop" 
+            src="/hero-comercial.png" 
             alt="Commercial Locksmith" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
