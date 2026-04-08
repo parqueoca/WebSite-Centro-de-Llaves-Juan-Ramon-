@@ -64,15 +64,15 @@ export default function Footer() {
             <ul className="space-y-4 text-gray-400">
               <li className="flex justify-between">
                 <span>Lunes - Viernes:</span>
-                <span className="text-white">24 Horas</span>
+                <span className="text-white">8:30am - 6:00pm</span>
               </li>
               <li className="flex justify-between">
                 <span>Sábado:</span>
-                <span className="text-white">24 Horas</span>
+                <span className="text-white">9:00am - 4:00pm</span>
               </li>
               <li className="flex justify-between">
                 <span>Domingo:</span>
-                <span className="text-white">Emergencias</span>
+                <span className="text-white">Solo Emergencias</span>
               </li>
             </ul>
           </div>
