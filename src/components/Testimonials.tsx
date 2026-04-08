@@ -86,7 +86,7 @@ export default function Testimonials() {
                   <div className="flex items-center gap-2">
                     <span className="text-xs text-gray-400 font-bold uppercase tracking-wider">{t.source}</span>
                     <div className="w-1 h-1 bg-gray-300 rounded-full" />
-                    <span className="text-[10px] text-primary font-black uppercase tracking-tighter">Cliente Verificado</span>
+                    <span className="text-[10px] text-red-600 font-black uppercase tracking-tighter">Cliente Verificado</span>
                   </div>
                 </div>
               </div>
