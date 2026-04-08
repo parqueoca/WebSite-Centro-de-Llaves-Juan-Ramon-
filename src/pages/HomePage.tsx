@@ -88,7 +88,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-sm font-black text-primary uppercase tracking-[0.3em] mb-4">Cotizador Inteligente</h2>
-            <h3 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-6">Obtén tu precio en segundos</h3>
+            <h3 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-6">Obtén tu precio al instante</h3>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
               Completa nuestro asistente inteligente y recibe una cotización precisa vía WhatsApp de inmediato.
             </p>
@@ -112,7 +112,7 @@ export default function HomePage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {[
                   { icon: ShieldCheck, title: 'Garantía Total', desc: 'Trabajos 100% garantizados.' },
-                  { icon: Zap, title: 'Respuesta Rápida', desc: 'Llegamos en menos de 30 min.' },
+                  { icon: Zap, title: 'Respuesta Rápida', desc: 'Llegamos lo antes posible.' },
                   { icon: Truck, title: 'A Domicilio', desc: 'Vamos a donde nos necesites.' },
                   { icon: Award, title: 'Certificados', desc: 'Técnicos altamente capacitados.' },
                 ].map((item, i) => (
