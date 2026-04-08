@@ -14,14 +14,14 @@ const slides = [
   {
     id: 2,
     title: "Cerrajería Residencial",
-    subtitle: "Protege lo que más quieres con sistemas de alta seguridad.",
+    subtitle: "Protegiendo lo que más importa: Expertos en seguridad residencial",
     image: "/hero-residencial.png",
     link: "/servicios/residencial"
   },
   {
     id: 3,
     title: "Cerrajería Comercial",
-    subtitle: "Control de acceso y seguridad perimetral para tu negocio.",
+    subtitle: "Seguridad nivel empresarial para proteger lo que has construido",
     image: "/hero-comercial.png",
     link: "/servicios/comercial"
   },
