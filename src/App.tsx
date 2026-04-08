@@ -8,7 +8,9 @@ import AutomotivePage from './pages/AutomotivePage';
 import ResidentialPage from './pages/ResidentialPage';
 import CommercialPage from './pages/CommercialPage';
 import AdminPanel from './pages/AdminPanel';
+import PoliciesPage from './pages/PoliciesPage';
 import SmartQuoter from './components/SmartQuoter';
+import ScrollToTop from './components/ScrollToTop';
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -25,6 +27,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         {/* Admin route without standard layout */}
         <Route path="/admin" element={<AdminPanel />} />
@@ -35,6 +38,7 @@ export default function App() {
         <Route path="/servicios/automotriz" element={<Layout><AutomotivePage /></Layout>} />
         <Route path="/servicios/residencial" element={<Layout><ResidentialPage /></Layout>} />
         <Route path="/servicios/comercial" element={<Layout><CommercialPage /></Layout>} />
+        <Route path="/politicas" element={<Layout><PoliciesPage /></Layout>} />
         <Route path="/cotizador" element={
           <Layout>
             <div className="py-24 bg-gray-50 min-h-screen">
