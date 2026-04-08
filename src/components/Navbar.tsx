@@ -12,6 +12,7 @@ export default function Navbar() {
     { name: 'Automotriz', href: '/servicios/automotriz' },
     { name: 'Residencial', href: '/servicios/residencial' },
     { name: 'Comercial', href: '/servicios/comercial' },
+    { name: 'Políticas', href: '/politicas' },
     { name: 'Contacto', href: '/contacto' },
   ];
 
