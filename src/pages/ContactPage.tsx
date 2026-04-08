@@ -29,7 +29,7 @@ export default function ContactPage() {
                 { icon: Phone, title: 'Teléfono Tienda', detail: '(809) 532-8933', sub: 'Atención Comercial' },
                 { icon: MessageSquare, title: 'WhatsApp / Emergencia', detail: '(809) 696-6792', sub: 'Respuesta inmediata' },
                 { icon: Mail, title: 'Email', detail: 'info@centrodellavesjuanramon.com', sub: 'Consultas generales' },
-                { icon: Clock, title: 'Horario', detail: 'Lunes - Domingo', sub: 'Abierto 24 horas' },
+                { icon: Clock, title: 'Horario Tienda', detail: 'Lun-Vie 8:30am-6pm', sub: 'Sáb 9am-4pm | Dom: Emergencias' },
               ].map((item, i) => (
                 <div key={i} className="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:border-primary transition-colors group">
                   <item.icon className="w-8 h-8 text-primary mb-4 group-hover:scale-110 transition-transform" />
@@ -105,20 +105,16 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* Map Placeholder */}
+      {/* Map */}
       <div className="h-[500px] bg-gray-200 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-            <p className="text-gray-500 font-bold uppercase tracking-widest">Mapa Interactivo Aquí</p>
-          </div>
-        </div>
-        <img 
-          src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1920&auto=format&fit=crop" 
-          alt="Map background" 
-          className="w-full h-full object-cover opacity-30 grayscale"
-          referrerPolicy="no-referrer"
-        />
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.45!2d-69.9270334!3d18.4543124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5620bfc92b435%3A0x2783e225bf928de4!2sCentro%20de%20Llaves%20Juan%20Ramon!5e0!3m2!1sen!2sdo!4v1712580000000!5m2!1sen!2sdo"
+          className="w-full h-full border-0"
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Centro de Llaves Juan Ramon"
+        ></iframe>
       </div>
     </div>
   );
