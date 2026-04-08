@@ -108,13 +108,22 @@ export default function ContactPage() {
       {/* Map */}
       <div className="h-[500px] bg-gray-200 relative overflow-hidden">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.45!2d-69.9270334!3d18.4543124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5620bfc92b435%3A0x2783e225bf928de4!2sCentro%20de%20Llaves%20Juan%20Ramon!5e0!3m2!1sen!2sdo!4v1712580000000!5m2!1sen!2sdo"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.45!2d-69.9270334!3d18.4543124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5620bfc92b435%3A0x2783e225bf928de4!2sCentro%20de%20Llaves%20Juan%20Ramon!5e0!3m2!1ses!2sdo!4v1712580000000!5m2!1ses!2sdo"
           className="w-full h-full border-0"
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="Centro de Llaves Juan Ramon"
         ></iframe>
+        <a 
+          href="https://maps.app.goo.gl/TgLo4dwmHLpqJF4TA" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="absolute bottom-4 right-4 bg-white text-dark font-bold px-4 py-2 rounded-lg shadow-lg flex items-center gap-2 hover:bg-primary transition-colors z-10"
+        >
+          <MapPin className="w-4 h-4" />
+          Ver en Google Maps
+        </a>
       </div>
     </div>
   );
