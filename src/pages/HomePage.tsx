@@ -50,7 +50,7 @@ export default function HomePage() {
               { 
                 icon: Building2, 
                 title: 'Comercial', 
-                desc: 'Cierrapuertas, barras antipánico y control de acceso.',
+                desc: 'Cierrapuertas, Apertura Caja Fuerte y control de acceso.',
                 link: '/servicios/comercial',
                 img: '/servicio-comercial.jpg'
               },
@@ -138,7 +138,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl" />
               <img 
-                src="https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=800&auto=format&fit=crop" 
+                src="/cerrajero-trabajando.png" 
                 alt="Locksmith working" 
                 className="rounded-[3rem] shadow-2xl relative z-10"
                 referrerPolicy="no-referrer"
