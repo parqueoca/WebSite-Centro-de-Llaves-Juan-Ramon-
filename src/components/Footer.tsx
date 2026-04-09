@@ -22,7 +22,7 @@ export default function Footer() {
               <a href="https://www.instagram.com/centrodellavesjuanramonrd" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-primary hover:text-dark transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.youtube.com/centrodellavesjuanramon" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-primary hover:text-dark transition-all">
+              <a href="https://www.youtube.com/centrodellavesjuanramon?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-primary hover:text-dark transition-all">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
@@ -79,8 +79,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-center items-center gap-2">
           <p>&copy; {new Date().getFullYear()} Centro de Llaves Juan Ramón. Todos los derechos reservados.</p>
+          <span className="hidden md:inline text-gray-700">|</span>
+          <p className="font-medium text-gray-400">©Desarrollado por Juan Esteban</p>
         </div>
       </div>
     </footer>
