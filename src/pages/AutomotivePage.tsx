@@ -67,7 +67,7 @@ export default function AutomotivePage() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1">
             <img 
-              src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=800&auto=format&fit=crop" 
+              src="/tecnologia-automotriz.png" 
               alt="Car key programming" 
               className="rounded-[3rem] shadow-2xl"
               referrerPolicy="no-referrer"
