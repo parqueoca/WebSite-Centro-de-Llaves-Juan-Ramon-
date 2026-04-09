@@ -98,7 +98,7 @@ export default function ResidentialPage() {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1513001900722-370f803f498d?q=80&w=800&auto=format&fit=crop" 
+              src="/seguridad-residencial-detalle.png" 
               alt="Residential security" 
               className="rounded-[3rem] shadow-2xl relative z-10"
               referrerPolicy="no-referrer"
