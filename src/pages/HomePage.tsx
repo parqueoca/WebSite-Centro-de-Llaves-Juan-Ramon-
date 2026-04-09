@@ -38,21 +38,21 @@ export default function HomePage() {
                 title: 'Automotriz', 
                 desc: 'Aperturas, llaves con chip, controles y programación.',
                 link: '/servicios/automotriz',
-                img: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=800&auto=format&fit=crop'
+                img: '/servicio-automotriz.jpg'
               },
               { 
                 icon: Home, 
                 title: 'Residencial', 
                 desc: 'Cambio de guardas, cerraduras de alta seguridad y aperturas.',
                 link: '/servicios/residencial',
-                img: 'https://images.unsplash.com/photo-1513001900722-370f803f498d?q=80&w=800&auto=format&fit=crop'
+                img: '/servicio-residencial.jpg'
               },
               { 
                 icon: Building2, 
                 title: 'Comercial', 
                 desc: 'Cierrapuertas, barras antipánico y control de acceso.',
                 link: '/servicios/comercial',
-                img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop'
+                img: '/servicio-comercial.jpg'
               },
             ].map((s, i) => (
               <motion.div
@@ -60,10 +60,16 @@ export default function HomePage() {
                 whileHover={{ y: -10 }}
                 className="group bg-gray-50 rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-100"
               >
-                <div className="h-64 overflow-hidden relative">
-                  <img src={s.img} alt={s.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent" />
-                  <s.icon className="absolute bottom-6 left-8 w-12 h-12 text-primary" />
+                <div className="h-64 overflow-hidden relative bg-gray-200">
+                  <motion.img 
+                    src={s.img} 
+                    alt={s.title} 
+                    className="w-full h-full object-contain p-4 transition-transform duration-700" 
+                    whileHover={{ scale: 1.1 }}
+                    referrerPolicy="no-referrer" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark/20 to-transparent pointer-events-none" />
+                  <s.icon className="absolute bottom-6 left-8 w-12 h-12 text-primary drop-shadow-lg" />
                 </div>
                 <div className="p-10">
                   <h4 className="text-2xl font-black text-dark mb-4 uppercase tracking-tighter">{s.title}</h4>
